@@ -1,15 +1,26 @@
 #include <main.hxx>
 
-string
-caesar(string in, int shift);
-
 int
 main(int argc, char* argv[])
 {
-    string in{ argv[1] };
-    string shift{ argv[2] };
-    int shift_int{ atoi(shift.c_str()) };
-    cout << caesar(in, shift_int) << endl;
+    if (argc != 4) {
+        help();
+        return 0;
+    }
+    string cipher{ argv[1] };
+    string key{ argv[2] };
+    string in{ argv[3] };
 
+    unordered_map<string, int> cipher_map = { { "caesar", 0 },
+                                              { "viginere", 1 } };
+
+    switch (cipher_map.at(cipher)) {
+        case 0:
+            cout << caesar(in, key) << endl;
+            break;
+        default:
+            help();
+            break;
+    }
     return 0;
 }

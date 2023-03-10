@@ -1,6 +1,6 @@
 #----------[ VARIABLES ]----------#
 set(PROJECT_NAME CES) 
-set(PROJECT_VERSION 0.1.0)
+set(PROJECT_VERSION 0.1.3)
 set(CMAKE_MIN_VERSION 3.0.0)
 #---------------------------------#
 
@@ -17,13 +17,16 @@ endif()
 #----------[ INCLUDE PROJECT FILES ]----------#
 set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
 set(SRC_DIR "${CMAKE_SOURCE_DIR}/src")
+set(CIPHER_DIR "${SRC_DIR}/ciphers")
 
 include_directories(${INCLUDE_DIR})
 include_directories(${SRC_DIR})
+include_directories(${CIPHER_DIR})
 
 file(GLOB_RECURSE SOURCES
     "${INCLUDE_DIR}/*.hxx"
     "${SRC_DIR}/*.cxx"
+    "${CIPHER_DIR}/*.cxx"
 )
 #---------------------------------------------#
 

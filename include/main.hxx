@@ -13,9 +13,17 @@
 //----------[ GLOBAL INCLUDES ]----------//
 #include <iostream>
 #include <string>
+#include <unordered_map>
 #include <vector>
+
 //---------------------------------------//
 
 //----------[ OTHER ]----------//
 using namespace std;
+
+string
+caesar(string in, string key);
+
+void
+help();
 //-----------------------------//
