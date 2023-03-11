@@ -3,7 +3,7 @@
 int
 main(int argc, char* argv[])
 {
-    if (argc != 4 && argc != 3) {
+    if (argc != 4 && argc != 5) {
         help();
         return 0;
     }
