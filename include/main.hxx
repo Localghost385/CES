@@ -15,14 +15,19 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
-
 //---------------------------------------//
 
-//----------[ OTHER ]----------//
+//----------[ FUNCTIONS ]----------//
 using namespace std;
 
 string
 caesar(string key, string in);
+
+string
+vigenere(string key, string in);
+
+string
+morse(string in);
 
 void
 help();

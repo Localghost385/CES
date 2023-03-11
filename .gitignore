@@ -1,4 +1,4 @@
 build
 linux
-.bat
+*.bat
 .clang-format
