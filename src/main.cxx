@@ -7,14 +7,19 @@ main(int argc, char* argv[])
         help();
         return 0;
     }
-    string cipher{ argv[1] };
-    string in{ argv[2] };
+    string src {argv[1]};
+    string cipher{ argv[2] };
+    string in {""};
+    if (src == "cli") {
+        in = argv[3];
+    } else if (src == "file") {
+        ifstream ifs(argv[3]);
+        in.assign((istreambuf_iterator<char>(ifs)),
+                  (istreambuf_iterator<char>()));
+    }
     string key{ "" };
     if (cipher != "morse") {
-        key = argv[3];
-    }
-    if (in == "" || cipher != "morse" && key == "") {
-        help();
+        key = argv[4];
     }
 
     unordered_map<string, int> cipher_map = { { "caesar", 0 },

@@ -1,6 +1,6 @@
 #----------[ VARIABLES ]----------#
 set(PROJECT_NAME CES) 
-set(PROJECT_VERSION 0.2.0)
+set(PROJECT_VERSION 0.2.2)
 set(CMAKE_MIN_VERSION 3.0.0)
 #---------------------------------#
 

@@ -11,6 +11,7 @@
 //-------------------------------------//
 
 //----------[ GLOBAL INCLUDES ]----------//
+#include <fstream>
 #include <iostream>
 #include <string>
 #include <unordered_map>
@@ -20,15 +21,17 @@
 //----------[ FUNCTIONS ]----------//
 using namespace std;
 
+// CAESAR CIPHER ENCRYPTION
 string
 caesar(string key, string in);
-
+// VIGENERE CIPHER ENCRYPTION
 string
 vigenere(string key, string in);
-
+// MORSE CODE ENCRYPTION
 string
 morse(string in);
 
+// PRINT HELP INFORMATION
 void
 help();
 //-----------------------------//

@@ -59,7 +59,7 @@ string
 morse(string in)
 {
     string out{ "" };
-    for (int i{ 0 }; i < in.length(); i++) {
+    for (int i{ 0 }; i < in.length() ; i++) {
         out.append(morse_alphabet.at(in.substr(i, 1)));
         out.append(" ");
     }
