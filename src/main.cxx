@@ -8,8 +8,8 @@ main(int argc, char* argv[])
         return 0;
     }
     string cipher{ argv[1] };
-    string key{ argv[2] };
-    string in{ argv[3] };
+    string in{ argv[2] };
+    string key{ argv[3] };
 
     unordered_map<string, int> cipher_map = { { "caesar", 0 },
                                               { "viginere", 1 } };

@@ -22,7 +22,7 @@
 using namespace std;
 
 string
-caesar(string in, string key);
+caesar(string key, string in);
 
 void
 help();

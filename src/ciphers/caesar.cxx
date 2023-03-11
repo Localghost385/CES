@@ -1,8 +1,8 @@
-#include <alphabet.hxx>
 #include <main.hxx>
+#include <alphabet.hxx>
 
 string
-caesar(string in, string key)
+caesar(string key, string in)
 {
     vector<int> v;
     int key_int = atoi(key.c_str());
